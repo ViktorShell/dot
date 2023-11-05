@@ -1,0 +1,2 @@
+# dot
+File di configurazione
