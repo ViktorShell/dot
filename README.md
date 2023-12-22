@@ -6,4 +6,5 @@ It will install the following configuration
 - Fish
 <br>
 Run the following code to install
+<br>
 `./install.bash`
