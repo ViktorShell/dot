@@ -3,13 +3,11 @@ if status is-interactive
   function fish_greeting
     pfetch
   end
-  
+
   alias clipboard="xclip -selection clipboard"
   alias ss "systemctl suspend -i"
   alias sn "shutdown now"
-  alias r  "ranger" 
-  alias pd "pushd ."
-  alias pp "popd" 
+  alias r "ranger"
     
   export VISUAL=nvim;
   export EDITOR=nvim;
