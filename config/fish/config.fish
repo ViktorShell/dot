@@ -2,6 +2,10 @@ if status is-interactive
   # Commands to run in interactive sessions can go here
   function fish_greeting
     pfetch
+    set wacom (xsetwacom --list devices)
+    if test -n "$wacom"
+      xsetwacom --set "Wacom One by Wacom S Pen stylus" Rotate ccw
+    end
   end
 
   # Load tmux config
@@ -14,6 +18,8 @@ if status is-interactive
   alias sn "sync; shutdown now"
   alias r "ranger"
   alias nv "nvim"
+  alias push "pushd ."
+  alias pop "popd"
   alias tm tmux_source 
     
   export VISUAL=nvim;
