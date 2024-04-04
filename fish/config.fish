@@ -2,10 +2,6 @@ if status is-interactive
   # Commands to run in interactive sessions can go here
   function fish_greeting
     pfetch
-    set wacom (xsetwacom --list devices)
-    if test -n "$wacom"
-      xsetwacom --set "Wacom One by Wacom S Pen stylus" Rotate ccw
-    end
   end
 
   # Load tmux config
@@ -13,13 +9,32 @@ if status is-interactive
     tmux new -c "tmux source-file $HOME/.config/tmux/tmux.conf"
   end
 
+  # Zathura
+  function zath
+    zathura $argv[1] &> /dev/null & disown
+  end
+
+  # MarkTex
+  function mark
+    flatpak run com.github.marktext.marktext $argv[1] &> /dev/null & disown 
+  end
+  
+  if type -q exa
+    alias ls "exa --icons"
+    alias ll "exa --icons -1"
+    alias la "exa --icons -l -a"
+  end
+
   alias clipboard="xclip -selection clipboard"
-  alias ss "systemctl suspend -i"
+  alias ss "systemctl suspend -i" 
   alias sn "sync; shutdown now"
   alias r "ranger"
+  alias zt zath
+  alias mk mark
   alias nv "nvim"
   alias push "pushd ."
   alias pop "popd"
+  alias screen "flameshot gui"
   alias tm tmux_source 
     
   export VISUAL=nvim;
