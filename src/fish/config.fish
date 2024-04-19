@@ -14,11 +14,6 @@ if status is-interactive
     zathura $argv[1] &> /dev/null & disown
   end
 
-  # MarkTex
-  function mark
-    flatpak run com.github.marktext.marktext $argv[1] &> /dev/null & disown 
-  end
-
   # Github AUTH
   function gauth
     eval $(ssh-agent -c)
@@ -36,7 +31,6 @@ if status is-interactive
   alias sn "sync; shutdown now"
   alias r "ranger"
   alias zt zath
-  alias mk mark
   alias nv "nvim"
   alias push "pushd ."
   alias pop "popd"

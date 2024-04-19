@@ -1,1 +1,5 @@
-# Dot files of my Desktop and Laptop
+# Dotfiles
+- Fish Shell
+- Kitty Terminal
+- Zathura PDF
+
