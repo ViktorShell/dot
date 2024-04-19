@@ -18,6 +18,12 @@ if status is-interactive
   function mark
     flatpak run com.github.marktext.marktext $argv[1] &> /dev/null & disown 
   end
+
+  # Github AUTH
+  function gauth
+    eval $(ssh-agent -c)
+    ssh-add $HOME/.ssh/github
+  end
   
   if type -q exa
     alias ls "exa --icons"
