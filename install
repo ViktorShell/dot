@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+
+set -eux
+
+CONFIG=$HOME/.config
+SRC=src
+
+# Read the command -> { install, sync, help }
+read command
+files=(kitty nvim tmux zathura zsh)
+
+if [[ "$command" == "help" ]]; then
+	echo -e "install, sync, help"
+elif [[ "$command" == "install" ]]; then
+	# Copy of the current configuratio
+	mkdir backup
+	for file in "${files[@]}"; do
+		if [ -e $CONFIG/$file ]; then
+			mv $CONFIG/$file backup
+		fi
+	done
+	
+	# Install new config
+	for file in "${files[@]}"; do
+		mv $SRC/$file $CONFIG
+	done
+	
+	# ZSH related
+	mv $SRC/zshenv $HOME/.zshenv
+	mv $CONFIG/zsh/zshrc $CONFIG/zsh/.zshrc
+
+elif [[ "$command" == "sync" ]]; then
+	# Copy config file from .config
+	for file in "${files[@]}"; do
+		if [ -e $CONFIG/$file ]; then
+			cp -r $CONFIG/$file $SRC
+		fi
+	done
+
+	cp $HOME/.zshenv $SRC/zshenv
+	mv $SRC/zsh/.zshrc $SRC/zsh/zshrc
+else
+	echo "Invalid command ==> $command"
+fi
