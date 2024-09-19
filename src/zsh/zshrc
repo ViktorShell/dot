@@ -43,11 +43,6 @@ bindkey '^n' history-search-forward  # Ctrl+n
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}' # Match case insesitive files
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}" # Show colored suggestion files
 
-# Zathura
-zath() {
-	zathura $1 &> /dev/null & disown
-}
-
 # Alias functions
 zath() {
 	zathura $1 &> /dev/null & disown
