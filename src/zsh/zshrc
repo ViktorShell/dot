@@ -49,7 +49,7 @@ zath() {
 }
 
 # Alias
-alias clipboard='xclip -selection clipboard'
+alias clip='xclip -selection clipboard'
 alias ss='systemctl suspend -i'
 alias sn='sync; shutdown now'
 alias ls='exa --icons'
