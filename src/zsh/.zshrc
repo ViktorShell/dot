@@ -60,6 +60,7 @@ lfcd () {
 
 # Enviroment Variables
 export EDITOR=nvim
+export ADB_DOWNLOAD=/storage/emulated/0/Download
 
 # Alias
 alias clipboard='xclip -selection clipboard'

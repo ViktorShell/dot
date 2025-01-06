@@ -22,10 +22,11 @@ return {
 
 		local sources = {
 			diagnostics.checkmake,
+			-- diagnostics.cpplint,
 			formatting.prettier.with({ filetypes = { "html", "json", "yaml", "markdown" } }),
 			formatting.stylua,
 			formatting.shfmt.with({ args = { "-i", "4" } }),
-			formatting.terraform_fmt,
+			formatting.clang_format,
 			require("none-ls.formatting.ruff").with({ extra_args = { "--extend-select", "I" } }),
 			require("none-ls.formatting.ruff_format"),
 			-- rust_analyzer
