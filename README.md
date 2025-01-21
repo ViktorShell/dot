@@ -1,4 +1,21 @@
-# Viktor's dotfiles configuration
+# Window Manager
+- bspwm
+- sxhkd
+- xbacklight
+- dunst
+- feh
+- scrat
+- uncutter
+- xclip
+- clipse
+- xrandr
+- xinit
+- rofi
+- redshift
+- slock
+- libinput
+
+## Viktor's dotfiles configuration
 - kitty
 - nvim
 - tmux
