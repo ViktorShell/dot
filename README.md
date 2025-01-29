@@ -1,40 +1,8 @@
 # Window Manager
 - bspwm
 - sxhkd
-- xbacklight
-- dunst
-- feh
-- scrat
-- uncutter
-- xclip
-- clipse
-- xrandr
-- xinit
+- lemonbar
 - rofi
-- redshift
-- slock
-- libinput
 
-## Viktor's dotfiles configuration
-- kitty
-- nvim
-- tmux
-- zsh
-- zathura
+## Doc
 
-## Font
-Fira Code Nerd Font
-
-## Shell tools
-- zsh
-- lf
-- nvim
-- tmux
-- flatpack
-- git
-- fzf
-- fd
-- exa
-- man-pages
-- tealdeer
-- tlp

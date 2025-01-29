@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+function bar() {
+    while true; do
+        /bin/lua ~/.config/lemonbar/bar.lua
+        sleep 1
+    done
+}
+
+kill -KILL $(pgrep lemonbar)
+
+bar | lemonbar -p \
+    -g x52 \
+    -B "#0B0E14" \
+    -F "#FFFFFF" \
+    -u 0 \
+    -f "FiraCode Nerd Font:size=9" \
+    -f "Font Awesome 6 Free-4:size=9"

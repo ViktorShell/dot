@@ -69,7 +69,7 @@ alias nv='nvim'
 alias push='pushd .'
 alias pop='popd'
 alias tm='tmux'
-alias agent='eval $(ssh-agent) > /dev/null && ssh-add $HOME/.ssh/key'
+alias agent='eval $(ssh-agent) > /dev/null && ssh-add $HOME/.ssh/github'
 alias lf='lfcd'
 alias ..='cd ..'
 

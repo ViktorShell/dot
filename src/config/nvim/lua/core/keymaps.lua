@@ -24,6 +24,8 @@ vim.keymap.set("n", "x", '"_x', opts)
 vim.keymap.set("i", "jk", "<ESC>", opts)
 vim.keymap.set("i", "kj", "<ESC>", opts)
 
+-- vim.keymap.set({ "n", "v" }, "<leader>sc", require("stay-centered").toggle, { desc = "Toggle stay-centered.nvim" })
+
 -- Resize with arrows
 vim.keymap.set("n", "<Up>", ":resize -2<CR>", opts)
 vim.keymap.set("n", "<Down>", ":resize +2<CR>", opts)

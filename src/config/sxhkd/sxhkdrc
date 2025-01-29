@@ -2,8 +2,14 @@
 alt + Return
   kitty
 
+alt + v
+  kitty --class clipse -e "clipse"
+
+Print
+  scrot -s $HOME/Pictures/Screenshot/%Y-%m-%d-%T-screenshot.png
+
 alt + d
-  rofi -show drun
+  rofi -show drun -modi drun,window,run
 
 alt + shift + q
   bspc node -c
@@ -30,7 +36,7 @@ alt + {_,shift + } space
 
 # Toggle fullscreen
 alt + {_, shift + } f
-  bspc node -t {fullscreen, tiled}
+  bspc node -t {fullscreen; xdo hide -a "bar", tiled; xdo show -a "bar"}
 
 # Workspace
 alt + {1-5}
@@ -43,3 +49,25 @@ alt + shift + c
 # Restart bspwm
 alt + Escape
   bspc wm -r
+
+
+# Audio
+XF86AudioMute
+  pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+XF86AudioLowerVolume
+  pactl set-sink-volume @DEFAULT_SINK@ "-5%"
+
+XF86AudioRaiseVolume
+  pactl set-sink-volume @DEFAULT_SINK@ "+5%"
+
+# Mic
+XF86AudioMicMute
+  pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
+# Light
+XF86MonBrightnessUp
+  light -A 5
+
+XF86MonBrightnessDown
+  light -U 5
