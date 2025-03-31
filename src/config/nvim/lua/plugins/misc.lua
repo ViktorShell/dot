@@ -44,4 +44,23 @@ return {
 	{
 		"psliwka/termcolors.nvim", -- Generate color scheme for terminal based on the neovim theme
 	},
+	{
+		"cordx56/rustowl",
+		dependencies = { "neovim/nvim-lspconfig" },
+		lazy = false,
+		config = function()
+			-- 	lspconfig.rustowl.setup({
+			-- 		trigger = {
+			-- 			hover = false,
+			-- 		},
+			-- 	})
+			vim.keymap.set(
+				"n",
+				"<C-o>",
+				require("rustowl").rustowl_cursor,
+				{ noremap = true, silent = true },
+				{ desc = "Enable rust lifetime view" }
+			)
+		end,
+	},
 }

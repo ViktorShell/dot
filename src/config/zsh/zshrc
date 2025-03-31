@@ -53,12 +53,21 @@ lfcd () {
     cd "$(command lf -print-last-dir "$@")"
 }
 
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
 # Enviroment Variables
 export EDITOR=nvim
 export ADB_DOWNLOAD=/storage/emulated/0/Download
 
 # Alias
-alias clipboard='xclip -selection clipboard'
+alias clip='xclip -selection clipboard'
 alias ss='systemctl suspend -i'
 alias sn='sync; shutdown now'
 alias ls='exa --icons'
@@ -71,6 +80,7 @@ alias pop='popd'
 alias tm='tmux'
 alias agent='eval $(ssh-agent) > /dev/null && ssh-add $HOME/.ssh/github'
 alias lf='lfcd'
+alias t='todo.sh'
 alias ..='cd ..'
 
 # Shell integrations

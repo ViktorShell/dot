@@ -1,0 +1,1768 @@
+git clone https://github.com/tpm/tpm
+git clone https://github.com/tmux-plugins/tpm
+env | grep SHELL
+ls tpm
+zsh
+nv .Xresources
+killall bpswm
+paru -S brave-bin
+xbacklight --help
+xbacklight -display
+xbacklight -display eDP-1
+xbacklight -d eDP-1
+xbacklight -get
+sudo xbacklight -get
+paru -S clight
+loadkeys it
+clight --help
+tldr -u
+tldr clight
+paru -Rnsu clight
+sudo pacman -Ss lemonbar
+paru -Ss lemonbar
+paru -S lemonbar-xfg-git
+paru -S lemonbar-xft-git
+env | grep XDG
+./lemonscript | lemonbar
+./lemonscript | lemonbar &
+mkdir lemonbar
+mv bspwm/scripts/lemonscript lemonbar
+unzip fontawesome-free-6.7.2-desktop.zip
+cd fontawesome-free-6.7.2-desktop
+git clone https://archlinux.org/packages/extra/any/ttf-font-awesome
+curl https://github.com/FortAwesome/Font-Awesome/archive/6.7.2.tar.gz -o font-awesome.tar.gz
+tar xvf font-awesome.tar.gz
+rm font-awesome.tar.gz
+curl https://github.com/FortAwesome/Font-Awesome/archive/6.7.2.tar.gz
+sudo pacman -Ss font-awesome
+sudo pacman -S ttf-font-awesome
+cd /usr/share
+cd font
+cd fonts
+cd TTF
+fc-query
+tldr fc-query
+tldr --update
+man fc-query
+fc-list | grep Awesome
+fc-list | more
+ls /bin | grep x
+ls /bin | grep xf
+sudo pacman -S xorg-xfontsel xorg-xlsfonts
+xfontsel
+xlsfonts | grep awesome
+fc-cache
+sudo fc-cache
+sudo -c fc-cache
+su -c fc-cache
+fc-list | grep Fira | grep small
+fc-list | grep Fira | grep Small
+xlsfonts
+sudo pacman -Ss fira
+xlsfonts | fzf
+fc-list
+fc-list | grep Fira
+ping 1.1.1.1
+bspc query -D -d focused
+bspc wm -r
+bspc query -D -d active --names
+bspc query -D  focused --names
+bspc query -D -d focused --names
+bspc query -D -W -w
+bspc query -D -w W
+bspc query -D -d .occupied
+for desk in {1..5} do\
+echo $desk
+touch test
+chmod u+x test
+nv test
+cat tmux.conf
+./test
+bspc query -D -d .occupied --names\
+
+occupied=$(bspc query -D -d .occupied --names)
+echo $occupied
+if [ "1" in $occupied ]\
+then;\
+echo "true"\
+fi
+touch bar.lua
+strip
+tldr strip
+cd kio
+lua bar.lua | lemonbar
+killall lemonbar && ./lemonscript
+tldr date
+date -u "+%H:%M"
+date -u "+%d/%m/%y"
+date -u "+%d/%m"
+kill -KILL 1312
+kill -KILL 3830
+kill -KILL 18558
+kill -KILL 18123
+kill -KILL 21075
+killall lemonscript
+kill -KILL 21767 22940
+kill -KILL 23241 23739 24121 41923
+man set
+./lemonscript > /dev/null &
+kill 42813
+kill -KILL 42813
+killa 42815
+kill 42815
+kill 43042
+sudo pacman -S acpi
+acpi --help
+acpi -b | awk '{print $1}'
+acpi -b | awk '{print $2}'
+acpi -b | awk '{print $3}' | cut ','
+man cut
+acpi -b | awk '{print $3}' | cut -c ','
+acpi -b | awk '{print $3}' | cut -d ','
+acpi -b | awk '{print $3}' | cut -d ',' -f2
+acpi -b | awk '{print $3}' | sed 's/,/ '
+acpi -b | awk '{print $3}' | sed 's/,/ /g'
+acpi -b | awk '{print $3}\
+'
+acpi -b | awk '{print $3}'\
+
+acpi -b | awk '{print $3}
+acpi -b | awk '{print $3}'
+acpi -b | awk '{print $3}' | sed 's/,/ /'
+acpi -b
+kill 43237
+kill 49830
+kill 50137
+lemonbar
+kill 50369
+kill 50575
+kill 50576
+kill 50840
+kill 50841
+acpi -b | awk '{print $4}' | sed 's/\n%,/ /'
+acpi -b | awk '{print $4}' | sed 's/%,/ /'
+kill 51968
+kill 7556
+kill 51229
+kill 51230
+acpi -b | awk '{print $4}' | sed 's/%,//'
+lua bar.lua
+kill 51936
+acpi
+acpi -b | awk '{print $3}' | sed 's/,//\
+'
+sudo pacman -S btop
+kill 52936
+ps 
+kill 51935
+kill 52937
+ip addr | grep inet$
+ip
+nmcli 
+nmcli dev | grep wlo1
+nmcli dev | grep "^wlo1"
+nmcli dev 
+tldr nmcli
+nmcli dev | grep "^wlo1" | awk '{print $3}'
+nmcli dev
+kill 63601
+kill 63602
+timedatectl --systohc
+timedatectl 
+date "+%d/%m"
+date "+%H/%M"
+sudo pacman -S pipewire wireplumber
+sudo pacman -S pipewire-pulseaudio
+sudo pacman -S pipewire-audio pipewire-alsa pipewire-pulse
+pactl list sinks short
+kill 1224 1229
+kill 1231
+pactl info
+tldr pactl
+pactl @DEFAULT_SINK@ short
+pactl info @DEFAULT_SINK@ short
+pactl set-sink-mute @DEFAULT_SINK@
+pactl set-sink-mute 1 @DEFAULT_SINK@
+pactl get-sink-volume @DEFAULT_SINK@ short
+pactl get-sink-volume @DEFAULT_SINK@
+pactl get-source-mute @DEFAULT_SOURCE@
+pactl get-sink-mute @DEFAULT_SINK@ | awk '{print $2}'
+pactl get-sink-volume @DEFAULT_SINK@ 
+pactl get-sink-volume @DEFAULT_SINK@  | awk '{print $4}'
+pactl get-sink-mute @DEFAULT_SINK@
+pactl set-source-mute @DEFAULT_SOURCE@ toggle
+pactl set-sink-mute @DEFAULT_SINK@ toggle
+paru -S light
+sudo pacman -Ss kdbb
+sudo pacman -Ss kbdd
+light -S 50.0
+usermod -aG video viktor
+sudo usermod -aG video viktor
+light -S 50
+light -S 30
+light -D 5
+sudo light -U 10
+light -A 10
+sudo light -A 10
+kill 1201 1206 1207
+light -A 10 
+light -G
+light -G | cut -d "." -f 1
+bspc query -D -d .occupied --names
+killall bspwm
+kill 52956
+kill 52960
+kill 52961
+bspc reload
+bspc --help
+cd .config/bspwm/
+pstm
+kill 54038
+kill 54043
+kill 54412
+kill 54417
+nv .x
+nv .xinitrc
+chmod u+x lemonscript
+killall lemonbar
+killall 55947
+killall 55948
+killall 55947 55948
+kill 55947 55948
+kill 56907
+kill 56909
+xtitle
+lemonbar &
+env | grep PANEL
+kill 57688
+fg
+lss
+grep lua
+lua
+kill 58066
+kill 58069
+kill 58402
+kill 58404
+./lemonscript
+lua bar.lua | lemonbar -p
+lua bar.lua 2>&1 >> debug | lemonbar -p
+cat de
+cat debug
+kill 59384
+kill 59386
+rm de
+rm bk_sxhkdrc
+man sxhkd
+rm debug
+ls dot
+rm -rf dot
+xev -event keyboard > keys
+nv keys
+rm keys
+pactl -get-sink-volume @DEFAULT_SINK@
+pactl --get-sink-volume @DEFAULT_SINK@
+pactl
+pactl --help
+pactl get-sink-volume @DEFAULT_SINK@  | awk '{print $5}' | sed 's/%\n//'
+pactl get-sink-volume @DEFAULT_SINK@  | awk '{print $5}' | sed 's/%\n//g'
+pactl get-sink-volume @DEFAULT_SINK@  | awk '{print $5}' | sed 's/%//'
+pactl get-sink-volume @DEFAULT_SINK@  | awk '{print $5}' | cut -d '%\n'
+pactl get-sink-volume @DEFAULT_SINK@  | awk '{print $5}' | cut -d '%\n' -f 1
+pactl get-sink-volume @DEFAULT_SINK@  | awk '{print $5}' | cut -d '%' -f 1
+tr
+tr --help
+pactl get-sink-volume @DEFAULT_SINK@  | awk '{print $5}' | tr -d 'n%'
+pactl get-sink-volume @DEFAULT_SINK@  | awk '{print $5}' | tr -d '\n%'
+pactl get-sink-volume @DEFAULT_SINK@  | awk '{print $5}' | tr -d '\n' -d '%'
+tldr tr
+pactl get-sink-volume @DEFAULT_SINK@  | awk '{print $5}' | tr '\n' ''
+pactl get-sink-volume @DEFAULT_SINK@  | awk '{print $5}' | tr '\n' '\ '
+pactl get-sink-volume @DEFAULT_SINK@  | awk '{print $5}' | tr '\n'
+pactl get-sink-volume @DEFAULT_SINK@  | awk '{print $5}' | tr -d '\n'
+pactl get-sink-volume @DEFAULT_SINK@  | awk '{print $5}'
+pactl get-sink-volume @DEFAULT_SINK@  | awk '{print $5}' | tr -d '%'
+pactl get-sink-volume @DEFAULT_SINK@  | awk '{print $5}' | tr -d '%' | tr -d '\n'
+pactl get-sink-volume @DEFAULT_SINK@  | awk '{print $5}' | tr -d '\%' | tr -d '\n'
+pactl get-sink-volume @DEFAULT_SINK@  | awk '{print $5}' | tr -d '\%' | tr -s '\n'
+man tr
+volume=$(pactl get-sink-volume @DEFAULT_SINK@  | awk '{print $5}' | tr -d '\%' | tr -s '\n')
+touch audio
+chmod u+x audio
+nv audio
+pactl set-sink-volume @DEFAULT_SINK@ 30
+pactl set-sink-volume @DEFAULT_SINK@ 30%
+pactl set-sink-volume @DEFAULT_SINK@ -13%
+test $volume -gt 100
+volume=90
+audio -audo -down
+echo $volume
+volume=120
+test $volume -gt 120 && echo "yes"
+test $volume -gt 100 && echo "yes"
+$(test $volume -gt 100) && echo "yes"
+echo "$volume%"
+pactl set-sink-volume @DEFAULT_SINK@ -5%
+pactl set-sink-volume @DEFAULT_SINK@ +5%
+pactl set-sink-volume @DEFAULT_SINK@ -2%
+val="-audi"
+[ "$val" == "-audi" ]; then echo "ciao"; fi
+[ "$val" == "-audi" ]; echo "ciao"; fi
+[ "$val" == "-audi" ]; echo "ciao"
+lcear
+./audio -audio -down
+./audio -audio -up
+./audio -audio-mute
+./audio -mic-mute
+light --help
+pactl -set-sink-volume @DEFAULT_SINK@ "-5%"\
+
+pactl -set-sink-volume @DEFAULT_SINK@ -5%\
+
+light -A 5
+light -U 5
+mkdir rofi
+rofi -dump-config config.rasi
+rofi -dump-config > config.rasi
+mkdir themes
+touch purplebitch.rasi
+cd .local/share/fonts
+rofi-theme-selector
+nv purplebitch.rasi
+rofi -show {window,drun}
+rofi -show {drun}
+rofi --help
+rofi
+rofi -show {combi}
+rofi -show {+combi}
+rofi -show combi
+rofi -show drun
+rofi -show drun,window
+rofi -show {drun,window}
+rofi -show drun -modi drun,window
+xprop | grep kitty
+xprop | grep clipse
+man bpsc
+bspc rules -l
+sudo pacman -S bc
+sudo pacman -Ss xdottool
+sudo pacman -Ss xdotool
+sudo pacman -S xdotool
+xdotool search --onlyvisible --class "clipse"
+xdotool search --onlyvisible --class "kitty"
+xdotool search --class "kitty"
+xdotool search --class "clipse"
+bspc node $clipse_id -t floating
+mkdir scripts
+touch clipse-launcher
+chmod u+x clipse-launcher
+xrandr | grep '*'
+xrandr | grep '*' | awk '{print $1}'
+screen_width=$(xrandr | grep '*' | awk '{print $1}' | sed 's/x.*//')
+echo $screen_width
+echo "$screen_width / 3" | bc
+cd .config/b
+kitty --class clipse -e "clipse"
+kitty --class clipse -e "clipse" &
+kitty --class "clipse" -e "clipse" --geometry 600x400
+kitty --class "clipse" -e "clipse"
+./clipse-launcher
+killall lua
+ps aux | grep lua | awk '{print $2}'
+kill $(ps aux | grep lua | awk '{print $2}' | tr '\n' ' ')
+kill 522009
+ps aux | grep lua | awk '{print $2}' | tr '\n' ' '
+ps aux | grep lua | awk '{print $2}' | tr -s '\r'
+ps aux | grep lua | awk '{print $2}' | sed 's/\n/ /'
+ps aux | grep lua | awk '{print $2}' | sed 's/\n/\ /'
+ps aux | grep lua | awk '{print $2}' | sed 's/\n//'
+ps aux | grep lua | awk '{print $2}' | tr -s '\n'
+ps aux | grep lua | awk '{print $2}' | tr -s '\n' ' ' | sed 's/%//'
+ps aux | grep lua | awk '{print $2}' | tr -s '\n' ' ' | sed 's/%/ /'
+ps aux | grep lua | awk '{print $2}' | tr -s '\n' ' '
+kill -KILL $(ps aux | grep lua | awk '{print $2}' | tr -s '\n' ' ')
+xrandr | grep '*' | awk '{print $1}' | sed 's/x.*//'
+cd b
+cd scripts
+cat clipse-launcher
+nv clipse-launcher
+kitty --class "clipse" -e "clipse" &
+clipse_id=$(xdotool search --class "clipse" | head -n 1)
+echo $clipse_id
+xdotool getwindowgeometry $clipse_id
+ps aux | grep lua
+bspc rule -l
+xrandr | grep '*' | awk '{print $1}' | sed 's/*.x//'
+dunst
+dunst --help
+dunst -startup_notification
+scrot
+rm 2025-01-24-094526_2880x1800_scrot.png
+scrot --help
+scrot -s
+rm 2025-01-24-094822_467x295_scrot.png
+mkdir Screenshot
+scrot -s $HOME/Pictures/Screenshot/%Y-%m-%d-%T-screenshot.png
+bspc rule -a feh stat=floating center=on focus=on rectangle=1440x900+730+450\
+
+feh 2025-01-24-09:49:46-screenshot.png
+rm 2025-01-24-09:49:46-screenshot.png
+tldr redshift
+redshift -O 4500
+redshift -O 6500
+redshift -O 10000
+redshift -P
+redshift -O 15000
+redshift -O 9500
+cd Pictures
+cd Screenshot
+feh 2025-01-24-10:03:19-screenshot.png
+xev -event keyboard
+feh 2025-01-24-10:03:19-screenshot.png &
+xdotool search "feh"
+xdotool search --class "feh"
+xdotool search --class "feh" --names
+xdotool search --class "feh" --name
+xdotool -h
+.
+cd .
+cd -
+redshift --help
+redshift p
+xrandr
+xrandr -h
+xrandr --help
+xrandr --current
+xrandr --verbose
+mkdir redshift
+cd redshift
+touch redshift.conf
+nv redshift.conf
+redshift -p
+sudo pacman -S cronie
+sudo systemctl enable cronie
+sudo systemctl start cronie
+EDITOR=nvim crontab -e
+redshift -h
+cat bspwmrc
+bspc rule -a feh state=floating center=on focus=on rectangle=1440x900+730+450\
+
+cd pics
+feh wp.jpg
+ls scripts
+rm -rf scripts
+man bspwm
+rm -rf light
+rm -rf redshift
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source $HOME/.cargo/env
+git clone git@github.com:ViktorShell/Tesi.git
+mv Tesi tesi
+git clone git@github.com:ViktorShell/university.git
+lear
+git clone git@github.com:ViktorShell/dot.git
+cat track
+mkdir 4.2
+cd 4.2
+cargo new reference
+cd reference
+mv 4.2 4.2_Reference
+mkdir 4.3_SliceType
+cd 4.3_SliceType
+mv slice slice_error
+cargo new slice
+cd slice
+sudo pacman -S bluez bluez-utils
+bluetoothctl --help
+btusb
+bluetoothctl power on
+bluetoothctl scan on
+bluetoothctl agent on
+bluetoothctl
+sudo pacman -S blueman
+sudo pacman -Rnsu blueman
+sudo pacman -S blueberry
+pactl 
+pactl -h
+sudo systemctl disable bluetooth
+setxkbmap us
+light -U 10
+sudo pacman /Syu
+nv colorscheme.lua
+cd ki
+cd kitty
+cd lemonbar
+nv lemonscript
+tldr pgrep
+pgrep lemon
+pgrep lemonscript
+pgrep lemonbar
+kill $(pgrep lemon)
+kill 1419
+kill 1417
+./lemonscript &
+disown
+cd rofi
+mv purplebitch.rasi custom_theme.rasi
+nv config.rasi
+nv custom_theme.rasi
+cd bspwm
+cd tmux
+rm -rf .local/share/nvim
+nv lualine.lua
+sudo pacman -S picom
+mkdir picom
+cd picom
+touch picom.conf
+cp /etc/xdg/picom.conf .
+nv picom.conf
+picom
+cd .config/bspwm
+nv bspwmrc
+sudo pacman -Syu
+paru -Syu
+sudo pacman -S vlc
+vlc 2022-10-03-OrientamentoICT-TesiTirocini-PaoloMilazzo.mp4
+rm 2022-10-03-OrientamentoICT-TesiTirocini-PaoloMilazzo.mp4
+rm Lauree_Tesi_Tirocini_2022_2023\ \(1\).pdf
+cat ~/.bashrc
+sudo pacman -Ss zathura
+sudo pacman -S zathura-pdf-poppler
+zt Lauree_Tesi_Tirocini_2022_2023.pdf
+cal
+cal --help
+cal -12
+cal -3
+cal -n 7
+cal -n 6
+cal -n 12
+mv $HOME/Downloads/Lauree_Tesi_Tirocini_2022_2023.pdf .
+git config --global user.email "enricofiascov@gmail.com"
+git config --global name "Viktor"
+git config --global user.name "Viktor"
+git commit -m "Dati relativi alla tesi"
+nmcli
+cd .config/lemonbar
+man slock
+cd st
+cd 2_Guessing_Game
+cd GuessingGame
+cargo build & slock
+sync
+mkdir 6_Cargo
+cd 6_Cargo
+pactl get-default-sink NAME
+git commit -m "Rust stuff\
+"
+tldr crontab
+env | grep DISPLAY
+crontab -e
+echo "Ciao"
+jq
+xdotool search --class "lemonbar" --name
+xdotool search --class "lemon" --name
+xdotool search --class "lemon"
+xdotool --help
+xdotool getwindowactive
+xdotool getactivewindow
+xprop | grep "Lemon\
+"
+man bspwm 
+bspc rule -a lemonbar hidden=on
+bspc rule -a lemonbar hidden=off
+bspc rule -a Lemonbar hidden=off
+bspc rule -a Lemonbar hidden=on
+xdotool 
+xdotool search --any
+lb=$(xdotool search --any 'lemon')
+head
+head --help
+head -n 1
+xdotool search --any "lemon" | head -n 1
+xdotool search --any "lemon" | head -n 2
+xdotool search --any "lemon" | head -n 0
+xdotool search --any "lemon" | tail -n 0
+xdotool search --any "lemon" | tail -n 2
+xdotool search --any "lemon" | tail -n 3
+tail --help
+xdotool search --any "lemon" | tail -n -1
+xdotool search --any "lemon" | tail -n -0
+xdotool search --any "lemon" | tail -n -2
+xdotool search --any "lemon" | tail -n -3
+xdotool search --any "lemon" | tail -n -
+xdotool search --any "lemon" | tail -n 1
+xdotool search --any "lemon" | grep "[1-9]"
+xdotool search --any "lemon" | grep "^[1-9]"
+xdotool search --any "lemon" | tr -d "\n"
+tldr cut
+xdotool search --any "lemon" | cut -d "\n" --fields 1
+xdotool search --any "lemon" | cut -delimiter '\n' --fields 1
+xdotool search --any "lemon" | cut -d "\n" --fields 0
+xdotool search --any "lemon" | cut -d "\n" --fields 2
+xdotool search --any "lemon" 
+xdotool search --any "lemon" | awk "NR == 1"
+xdotool search --any "lemon" | awk "NR == 2"
+xdotool search --any "lemon" | awk "NR == 3"
+xdotool search --any "lemon"
+xdotool search --any "lemon" > tmp
+nv tmp
+rm tmp
+lb=$(xdotool search --any "lemon")
+lb=$(xdotool search --any "lemon" 2>/dev/null)
+echo $lb
+man bspc
+bspc node $lb --flag hidden -f
+bspc node 12582917 --flag hidden -f
+xdotool search --any "lemon" 2>/dev/null
+xdotool search
+xdotool search --title panel
+xdotool search --title panel windowunmap
+sudo pacman -Ss xdo
+sudo pacman -S xdo
+xdotool search --name "lemon"
+xdo hide -a $(xdotool search --name "lemon")
+xprop
+xdo hide -a sp
+xdo --help
+xdo -h
+tldr xdo
+xdo hide -a "bar"
+xdo show -a "bar"
+cd .config/sxhkd
+nv sxhkdrc
+sudo pacman -Ss gnome | grep ttf
+sudo pacman -S cantarell-fonts
+fc-cache -fv
+mkdir Testing
+cargo new playground
+cd playground
+rustup component add rust-analyzer
+cargo format
+cargo fmt
+nv none-ls.lua
+cargo new Employee
+cd Employee
+r
+git commit -m "Rust execise"
+mv playground 8_Collections
+cargo new Generics
+mv Generics 10_Generics
+cd 10_Generics
+cargo new Traits
+cd Traits
+tar xvf listings.tar.gz
+cd ch10-generic-types-traits-and-lifetimes
+cargo run 2>/dev/null
+mv Traits 10.2_Summary_Traits
+cargo new Pair_Traits
+cd Pair_Traits
+mv Pair_Traits 10.3_Pair_Traits
+cargo new Life_Time
+cd Life_Time
+cargo checck
+eix
+sudo systemctl stop bluetooth
+sudo systemctl enable tlp
+sudo systemctl start tlp
+mv Life_Time 10_Life_Time
+cargo new Testing
+rm -rf Testing
+cargo new Testing --lib
+cd Testing
+man ln
+tldr ln
+cat CACHEDIR.TAG
+file libTesting.rlib
+file libTesting.d
+cat libTesting.d
+redshift -O 3500
+cargo test it_works
+mv Testing/ 11_Testing
+cargo new minigrep
+cargo run -- 1 2 3 4
+cargo run -h
+cargo help run
+cargo run -- ciao come stai?
+cargo run -- ciao come stai
+cargo run -- ciao ciao.txt
+touch poem.txt
+cargo run -- 
+cargo run -- ciao
+cargo run -- ciao fi
+cargo run -- ciao poem.tx
+cargo run -- ciao poem.txt
+cargo help test
+cargo test -- --show-output
+cargo run -- safe poem.txt
+mv minigrep $HOME/Desktop
+ls deps
+./minigrep ciao
+./minigrep ciao $HOME/Documents/git/tesi/src/rust-lang/minigrep/src/lib.rs
+./minigrep safe $HOME/Documents/git/tesi/src/rust-lang/minigrep/src/lib.rs
+rm minigrep
+mkdir tst
+rm -rf tst
+mkdir minigrep
+cargo build --release
+cp -r minigrep $HOME/Desktop/minigrep
+mv minigrep minigrep_rust
+cp minigrep/target/release/minigrep .
+cp minigrep_rust/target/release/minigrep .
+cat "minigrep <query> <file_path>" > README.md
+echo "minigrep <query> <file_path>" > README.md
+tar cvf minigrep.tar minigrep
+scp -P 50022 minigrep.tar mario@192.168.1.110:/home/mario
+scp -P 50022 minigrep.tar viktor@192.168.1.110:/home/mario
+scp -P 50022 minigrep.tar viktor@192.168.1.110:/home/viktor
+ssh -p 50022 192.168.1.110
+ckear
+flatpak search boxes
+flatpak install org.gnome.Boxes
+flatpak kill 1742314
+rm track
+cargo new Closures
+mv Closures 13.1_Closures
+cd 13.1_Closures
+cd .config/nvim/
+cd lua/core
+nv options.lua
+cd plugins
+nv misc.lua
+cd zsh
+scp -P 50022 zshrc viktor@nazilandia.duckdns.org:/home/viktor
+f
+cat poem.txt
+git commit -m "Rust buona parte fatta"
+cd .config/
+mkdir config
+rm -r lemonbar picom tmux bspwm light rofi zathura clipse kitty nvim sxhkd zsh
+rm -r lemonbar picom tmux bspwm light rofi zathura clipse kitty nvim sxhkd zsh -f
+cp -r $HOME/.config/bspwm .
+cp -r $HOME/.config/clipse .
+cp -r $HOME/.config/kitty .
+cp -r $HOME/.config/lemonbar .
+cp -r $HOME/.config/light .
+cp -r $HOME/.config/nvim .
+cp -r $HOME/.config/picom .
+cp -r $HOME/.config/rofi .
+cp -r $HOME/.config/sxhkd .
+cp -r $HOME/.config/tmux .
+cp -r $HOME/.config/zathura .
+cp -r $HOME/.config/zsh .
+mkdir -p local/share/
+rm -rf fonts
+cp -r $HOME/.local/share/fonts local/share/
+cp $HOME/.Xresources Xresources
+cp $HOME/.xinitrc xinitrc
+cexit
+cp $HOME/.gitconfig gitconfig
+mkdir home-dot
+mv gitconfig home-dot
+mv xinitrc home-dot
+mv Xresources home-dot
+mkdir etc/xorg.conf.d -p
+mv 30-touchpad.conf etc/xorg.conf.d
+mv home-dot home
+touch software.txt
+sudo pacman -S bluez
+sudo pacman -S bluez-utils
+pacman -Q > software.txt
+sudo pacman -S ripgrep
+rg
+cd so
+nv software.txt
+git commit -m "Dots, Window Manager and software list"
+cargo new Iterators
+mv Iterators 13.2_Iterators
+cd 13.2_Iterators
+cargo run -- public poem.txt
+mkdir data
+mv poem.txt data
+mkdir 15_SmartPointers
+cargo new List
+cd List
+cargo new box
+cargo new Box
+mv src/main.rs Box/src
+rm Cargo.*
+cat github | xclip --select clipboard
+tldr xclip
+cat github | xclip -select clipboard
+git commit -m "Smart Pointer"
+shutdown now
+cd .ssh
+cat github
+bspc stop
+kill 1371
+kill 1387
+cat .ssh/github | xclip -select clipboard
+mv $HOME/Downloads/_PDP_2025__SPARE__Self_adaptive_Platform_for_Allocating_Resources_in_Emergencies_for_Urgent_Edge_Computing.pdf .
+mv _PDP_2025__SPARE__Self_adaptive_Platform_for_Allocating_Resources_in_Emergencies_for_Urgent_Edge_Computing.pdf urgent_edge.pdf
+zt urgent_edge.pdf
+git clone https://github.com/firecracker-microvm/firecracker.git
+nv devtool
+sudo pacman -S docker
+sudo systemctl start docker
+usermod -aG docker viktor
+sudo groupadd docker
+sudo usermod -aG docker viktor
+newgrp docker
+docker run hello-world
+tools/devtool build
+toolchain="$(uname -m)-unknown-linux-musl"
+tools/devtool checkenv
+sudo tools/devtool checkenv
+lsmod | grep kvm
+cat .gitignore
+docker ps
+sudo systemctl stop docker
+git rm --cached srd/firecracker
+rm -rf firecracker
+git submodule add https://github.com/firecracker-microvm/firecracker.git src/firecracker
+git commit -m "Spare && Firecracker"
+la
+python -m venv .venv
+pip install jupyter notebook pandas matplotlib
+pip install --upgrade pip
+jupyter
+tldr jupyter
+sudo pacman -S pandoc
+zt Cap1.pdf
+lf listings
+rm Esercizi_Statistica.html
+sudo pacman -Ss android
+sudo pacman -S android-tools
+env | grep AND
+adb push Cap1.pdf $ADB_DOWNLOAD
+adb tcpip 4455
+adb connect 192.168.46.47:4455
+adb connect 192.168.46.47:5555
+adb connect 192.168.46.47
+rm 3714465.pdf
+mv Re_\ Materiale\ per\ tesi\ WASM.zip $HOME/Documents/git/tesi/docs
+git commit -m "Esercizi Statistica completati"
+cd docs
+unzip Re_\ Materiale\ per\ tesi\ WASM.zip
+cat notes
+rm notes
+rm Re_\ Materiale\ per\ tesi\ WASM.zip
+cat bozza
+rm bozza
+zt 3302505.3310084.pdf
+git@github.com:ViktorShell/occhiodiluce.git
+git clone git@github.com:ViktorShell/occhiodiluce.git
+cd occhiodiluce
+cat README.md
+rm -rf occhiodiluce
+git check
+git checkout
+git commit -m "new Docs"
+git pull
+cd rust-lang
+cd minigrep
+rm RefCell -r
+cargo new RefCell
+cd RefCell
+cd 15_SmartPointers
+flatpak search bottle
+flatpak install com.usebottles.bottles
+sudo pacman -Ss filezilla
+sudo pacman -S filezilla
+git commit -m "RefCell"
+killall flatpak
+ps aux | grep flatpak
+rm brave-cifhbcnohmdccbgoicgdjpfamggdegmo-Default.desktop
+jupyter notebook Esercizi_Statistica.ipynb
+mv $HOME/Downloads/StatInf_esercizi_2025_02_07.pdf .
+chmod 0444 StatInf_esercizi_2025_
+chmod 0444 StatInf_esercizi_2025_31_01.pdf
+zt StatInf_esercizi_2025_02_07.pdf
+cp $HOME/Downloads/concentrazioni_endotossine.csv Database
+ls Database
+mv Database/concentrazioni_endotossine.csv jupyter/database
+time
+timedate
+date
+pip install pandoc
+env | grep A
+cd 
+adb push Settimana-2.pdf $ADB_DOWNLOAD
+rm Cap1.pdf
+rm concentrazioni_endotossine.csv
+rm EmpAdminHelper\ V01.61.0.0\ Full.zip
+ls listings
+rm Settimana-2.*
+òs
+nv bar.lua
+mkdir 16.4_Arc_Mutex
+mv $HOME/Desktop/main.rs 16.4_Arc_Mutex
+mkdir 
+mv 16.4_Arc_Mutex 16.3_Arc_Mutex
+mkdir 16.4_Send_Sync
+cd 16.4_Send_Sync
+git commit -m "Send & Sync"
+python
+rustfmt main.rs
+mkdir 17.2_Dyn_Trait_Objecct
+mv $HOME/Desktop/main.rs 17.2_Dyn_Trait_Objecct
+git commit -m "dyn"
+git commit -m "stat"
+cargo new Post
+mv Post 17.3_Dyn_Post_State_Pattern
+cd 17.
+mv 17.3_Dyn_Post_State_Pattern StatePatternPure
+mkdir 17.3_Dyn_State_Pattern
+mv StatePatternPure 17.3_Dyn_State_Pattern
+cd 17.3_Dyn_Post_State_Pattern
+cd 17.3_Dyn_State_Pattern
+cargo new post
+mv post RustImprovedStatePattern
+cd RustImprovedStatePattern
+rustfmt src/main.rs
+git commit -m "Capitolo 18"
+ls university
+cd esercizi
+cd database
+rm Country-data.csv
+mv $HOME/Downloads/OneDrive_1_2-19-2025.zip .
+unzip OneDrive_1_2-19-2025.zip
+rm OneDrive_1_2-19-2025.zip
+chmod 0400 erasmus_scores.csv
+chmod 0400 exp_numbers_data.csv
+chmod 0400 minutes_data.csv
+adb
+rm Settimana3.html
+rm listings
+rm -rf listings
+unzip html2pdf.zip
+rm html2pdf.zip
+adb push Settimana3.pdf $ADB_DOWNLOAD
+sl
+rm Settimana3.pdf
+nmcli dev wifi
+mkdir 19.1_Unsafe_Rust
+cd 19.1_Unsafe_Rust
+rustc --explain E0499
+rm main
+slock
+git commit -m "Advanced Traits"
+git commit -m "Settiman 3, esercizi"
+cargo new sever
+cd ser
+rm sever
+rm sever -r
+cargo new server
+cd server
+touch index.html
+s
+tar xf listings.tar.gz
+rm listings.tar.gz
+cd listings
+cd ch21-web-server
+cd no-listing-07-final-code
+mv no-listing-07-final-code web_server
+mv web_server $HOME/Documents/git/tesi/src/rust-lang/
+rm -r listings
+git commit -m "Fine del libro"
+adb connect 10.100.29.252
+adb connect 192.168.33.126
+adb connect
+adb 
+adb | grep tcp
+adb connect 192.168.33.126:5555
+ping 192.168.33.126
+lf
+adb push * $ADB_DOWNLOAD
+startx
+sudo pacman -S gnome
+setxkbmap it
+sudo systemctl enable gdm
+bspc quit
+kill -KILL 1346
+kill -KILL 1356
+sudo pacman -S gnome-tweaks
+sudo pacman -Ss ocs
+sudo pacman -Ss ocs | grep download
+sudo pacman -Ss ocs | fzf
+paru -Ss ocs
+paru -Ss ocs | fzf
+paru -S ocs-url
+rm volantes-cursors.tar.gz
+sudo pacman -Ss chrome | grep shell
+sudo pacman -Ss chrome
+sudo pacman -Ss gnome
+sudo pacman -Ss gnome | grep connec
+sudo pacman -S gnome-browser-connector
+cd .config/tmux
+nv tmux.conf
+cd themes
+nv gencolor.conf
+sudo pacman -Ss yazi
+sudo pacman -S yazi
+rm -rf Music Public Templates Videos
+git submodule add git@github.com:ViktorShell/Limes.git limes
+nv README.md
+nv LICENSE
+cargo new --lib wasm_executor
+ls -lahj
+ls -lajh
+rm -rf wasm_executor
+mkdir exec
+cd exec
+mkdir limes
+touch Cargo.toml
+ls -1
+sudo pacman -S tree
+tldr tree
+tree -L 1
+tree -L 2
+cargo run -p adder
+cargo new limes
+cargo new --lib func_exec
+cd func_exec
+lsù
+yz
+git commit -m "Init repo Limes"
+git commit -m "Tesi repo"
+sudo systemctl start gdm
+sudo systemctl status bluetooth
+sudo pacman -Ss kdeconnector
+sudo pacman -Ss kdeconnect
+sudo pacman -S kde-connect
+sudo pacman -S kdeconnect
+sudo pacman -Rnsu kdeconnect
+ip addr | grep inet | awk "NR=3 {}"
+ip addr | grep inet | awk "NR=3"
+ip addr | grep inet | awk "NF=3"
+ip addr | grep inet | awk "NR=2"
+ip addr | grep inet | awk "NL=2"
+man awk
+tldr awk
+clearclear
+ip addr | grep inet | awk "{print $NF = 2}"
+ip addr | grep inet | awk "{print $NF}"
+sudo pacman -Ss gnome | grep gsconnect
+paru -Ss gnome | grep gsconnect
+paru -S gnome-shell-extension-gsconnect-git
+$ gapplication launch org.gnome.Shell.Extensions.GSConnect
+gapplication launch org.gnome.Shell.Extensions.GSConnect
+gnome-shell-extension-tool
+sudo pacman -U
+pacman -Q
+pacman -Q | grep gnome
+sudo pacman -Rnsu gnome-shell-extension-gsconnect-git
+sudo pacman -S ufw
+sudo ufw enable\
+sudo ufw allow 1716:1764/tcp\
+sudo ufw allow 1716:1764/udp
+ufw
+ufw status
+sudo systemctl enable ufw
+sudo systemctl start ufw
+sudo ufw status
+cd .config/kitty
+nv kitty.conf
+sudo systemctl enable bluetooth
+sudo systemctl start bluetooth
+source 
+source zshrc
+sudo pacman -S base-devel
+cat Cargo.lock
+sudo pacman -S cmake clang llvm
+git clone --recursive https://github.com/bytecodealliance/wamr-rust-sdk\
+cd wamr-rust-sdk
+rm target
+rm -rf Cargo.lock
+env | grep CARGO
+cd target/doc/wamr_rust_sdk
+brave index.html
+rm gsconnectandyholmes.github.io.v57.shell-extension.zip
+rm StampaAvvisoPAGOPA.pdf
+unzip wamr-rust-sdk-1.1.0.zip
+cd wamr-rust-sdk-1.1.0
+rm -rf *
+git status
+sudo systemctl status tlp
+mkdir wasm_code
+cd wasm_code
+rustc --target wasm32-unknown-unknown -C opt-level=3 adder.wasm main.rs
+mv main.rs adder.rs
+rustc --target wasm32-unknown-unknown -C opt-level=3 adder.wasm adder.rs
+rustup target add wasm32-unknown-unknown\
+
+rustc --target wasm32-unknown-unknown -C opt-level=3 -o adder.wasm adder.rs
+rm adder.rs
+touch main.rs
+nv main.rs
+rustc --target wasm32-unknown-unknown -C opt-level=3 -o adder.wasm main.rs
+cat adder.wasm
+cleaqq
+nv adder.wasm
+nv runtime.rs
+git clone https://github.com/bytecodealliance/wamr-rust-sdk.git
+cd wa
+git commit -m "Fix size input in use_memory_pool to prevent out of bound size"
+env | grep SSH
+nv .gitconfig
+CLIPSE_ID=$(clipse -listen)
+echo $CLIPSE_ID
+pidof clipse
+echo $@
+echo $0
+clipse --help
+clipse keep
+clipse -wl-store
+sudo pacman -S wl-clipboard
+clipse -listen
+exec "clipse -listen"
+ps aux | grep lemon
+ps aux | grep clipse
+clipse
+clipse -listen-shell
+sudo pacman -Rnsu wl-clipboard
+git log
+celar
+git@github.com:ViktorShell/wamr-rust-sdk.git
+git clone git@github.com:ViktorShell/wamr-rust-sdk.git
+git checkout -b fix-pool-size
+git add -
+git commit -m "Remove size input in use_memory_pool to prevent out of bound size allocation"
+git push origin fix-pool-size
+git subsystem init
+git pull --recurse-submodule
+cd crates
+cd wamr-sys
+mkdir tmp
+cd tmp
+git clone https://github.com/bytecodealliance/wamr-rust-sdk.git --recursive-submodule
+git clone https://github.com/bytecodealliance/wamr-rust-sdk.git --recurse-submodule
+cd wamr-rust-sdk
+cargo doc
+rm -rf tmp
+rm -rf wamr-rust-sdk
+git clone https://github.com/bytecodealliance/wasmtime.git
+cd wasmtime
+rm -rf wasm_code
+rustc --target wasm32-wasi1p -o main.wasm main.rs
+rustc --print target-list
+rustup target add wasm32-wasip2
+rustc --target wasm32-wasip2 -o main.wasm main.rs
+rm main.long-type-1801573438191336315.txt
+rm *
+touch hellp.wat
+mv hellp.wat hello.wat
+cargo new wasm_test
+wasm_t
+nv src
+touch resources
+cd re
+rm -rf resources
+touch file.json
+nv file.json
+cargo build --target wasm-wasip1
+cargo build --help
+rustc --print target-list | grep wasm
+cargo build --release --target wasm32-wasip2
+cd build
+file wasm_test.wasm
+cp wasm_test.wasm $HOME/Desktop/wasm_test/resources/
+cargo new --lib json
+cd json
+rm -rf json
+cargo new --lib wasm_test
+cd wasm32-wasip2
+cd debug
+cargo build --target wasm32-wasip2
+cargo build --target wasm32-wasi --release
+rustup target add wasm32-wasi
+cargo new wasm_test_2
+cargo build --target wasm32-wasip2 --release
+cd wasm_test_2
+cargo build --target wasm32-unknown-unknown
+file wasm_test_2.wasm
+mv wasm_test_2.wasm $HOME/Desktop/wasm_test
+sudo pacman -Ss wasm-opt
+cargo install wasm-opt --locked
+mv wasm_test_2.wasm resources
+rm -rf wasm_test
+cp wasm_test_2.wasm $HOME/Desktop/wasm_test/resources
+mv wasm_test_2 $HOME/Desktop
+sudo pacman -S scrcpy
+realpath
+realpath --help
+realpath $0
+realpath "."
+$(dirname $(realpath "."))
+dirname
+dirname --help
+lls
+git clone git@github.com:ViktorShell/spare.git
+git checkout -b webassembly
+ssl
+yazi
+cd jupyter
+source .venv/bin/activate
+jupyter notebook
+c
+disable
+deactivate
+mv spare $HOME/Documents/git/
+source $HOME/.zshrc
+cd /home/viktor/Documents/git/spare\
+
+sudo pacman -S bat
+bat setup.sh
+./build_and_run.sh
+cat /proc/meminfo
+cat /proc/meminfo | nvim
+nv build_and_run.sh
+cd spare
+cd ohsw
+cd firepilot
+cd tesi
+cd wasm_runner
+ls src
+rm -rf wasm_runner
+rm -rf limes
+mkdir src
+touch lib.rs
+cat Cargo.
+rm -rf src
+cargo new --lib runtime
+cargo new restapi
+nv Cargo.
+rm restapi
+rm restapi -r
+cargo add wasmtime-wasi
+nv lib.rs
+touch compiler.rs
+touch runtime.rs
+cargo add uuid
+cargo add phf
+mkdir runtime
+mv runtime.rs runtime
+mv lambda.rs runtime
+nv mod.rs
+rm mod.rs
+mv runtime.rs mod.rs
+cargo add serde
+los
+tldr rg
+rg "Builder"
+tldr rustc
+cargo add json
+echo $XDG_SESSION_TYPE
+nv wasmtime-python.rs
+cd wasm_test
+cd /tmp
+cargo new rawpointer
+exut
+ks
+flatpak ps
+btop
+rm -rf .android
+flatpak ls
+tldr flatpak
+flatpak list --app
+flatpak remove org.vengarhq.Sober
+flatpak remove org.vingarhq.Sober
+flatpak remove org.vinegarhq.Sober
+rustc --explain E0£08
+cd sc
+cp lambda.rs lambda.rs.bk
+rustc --explain E0449
+rustc --explain E0277
+rustc --explain E0532
+mkdir resources
+mkdir rust_module
+cp $HOME/Desktop/rawpointer . -r
+cd rawpointer
+cargo metadata --format-version 1
+cclear
+tree
+tree -L 3
+cd target
+cd wasm32-unknown-unknown
+cd release
+cp rawpointer.wasm ../../../
+;s
+file rawpointer.wasm
+rm rawpointer.wasm
+mv rawpointer wrapper-rust
+lks
+cp target/wasm32-unknown-unknown/release/wrapper-rust.wasm .
+base64 --help
+base64 wrapper-rust.wasm
+base64 wrapper-rust.wasm | xclip
+base64 wrapper-rust.wasm | nv
+flatpak install --user https://sober.vinegarhq.org/sober.flatpakref
+adb connect 192.168.1.130
+sclear
+scrcpy --help
+nautilus
+nautilus .
+ls | grep grap
+nv grapplemod.json
+tar cvf mods.tar.xz mods config
+mv Better\ Adventures+\ \[Fabric\]\ \[Viktor\ Modified\]\ v1.24.zip $HOME/Desktop
+cd mod
+ls | grep fabric
+nv instance.json
+scp mods.tar.xz viktor@nazilandia.duckdns.org:/home/viktor/Desktop -P 50022
+sudo pacman -S jre17-openjdk-headless
+nv LaunchServer.sh
+nv eula.txt
+./LaunchServer.sh
+java -jar fabric-server-launch.jar
+rm Better\ Adventures+\ \[Fabric\]\ \[Viktor\ Modified\]\ v1.24.zip
+mkdir test
+mv rawpointer test
+mv wasm* test
+cat notes.md
+rm notes.md
+touch dieta.md
+nv dieta.md
+bc
+scp -P 50022 mods.tar.xz viktor@nazilandia.duckdns.org:/home/viktor/Desktop
+mv mods\ v1.24.zip mods.zip
+mv mods.zip $HOME/Desktop
+scp -P 50022 mods.tar.xz download@nazilandia.duckdns.org:/home/download
+scp -P 50022 mods.zip download@nazilandia.duckdns.org:/home/download
+scp -P 50022 mods.zip downloads@nazilandia.duckdns.org:/home/downloads
+tar cvf mods.tar.xz data config mods shaderpacks resourcepacks saves
+mv mods.tar.xz $HOME/Desktop
+rm mods.zip
+scp -P 50022 mods.tar.xz downloads@nazilandia.duckdns.org:/home/downloads
+cd mods
+ls | fzf
+lsblk
+sudo pacman -S efibootmgr
+sudo pacman -S osprober
+sudo pacman -S os-prober
+nv oreexcavation_groups.json
+nv oreexcavation_shapes.json 
+cd ..
+cler
+rm mods.tar.xz
+mv dieta.md $HOME/Documents
+mkdir palestra
+mv dieta.md palestra
+systemctl --failed
+journalctl -b
+go
+pacman -Qtd
+pacman -Qm
+cd /var/cache/pacman/pkg
+tldr df
+df pkg -h
+tldr du
+du -h pkg
+cd university
+cd corsi
+cd obsidian-notes
+cd .obsidian
+touch .obsidian.vimrc
+nv .obsidian.vimrc
+bc -l
+file wrapper-rust.wasm
+set RUSTFLAGS=-Awarnings
+rustc --explain E0507
+rustc --explain E0382
+rustc --explain E0716
+adb connect 192.168.1.64:37393
+adb tcpip 37393
+tldr adb 
+tldr adb tcip
+tldr adb tc
+adb killserver
+adb tcpip 37057
+adb tcpip 192.168.1.64
+adb connect 192.168.1.64
+adb ls
+adb --help
+adb device
+mkdir Mike
+adb tcpip 5555
+adb connect 192.168.1.124
+adb shell cd data
+adb shell ls data
+adb shell ls
+adb shell "ls storage"
+adb shell "ls storage/emulated"
+adb shell "ls storage/self"
+adb shell "ls data"
+adb shell "ls"
+env | grep ADB
+adb shell "sudo ls /storage/emulated"
+adb kill-server
+adb shell "ls /storage/emulated"
+sudo adb shell "ls /storage/emulated"
+sudo adb shell "ls /storage"
+sudo adb shell "ls /storage/self"
+sudo adb shell "ls /storage/self/primary"
+sudo adb shell "ls /storage/self/primary/DCIM"
+sudo adb shell "ls /storage/self/primary/DCIM/Camera"
+sudo adb pull "/storage/self/primary/DCIM/*" .
+sudo adb shell "ls /storage/self/primary/"
+sudo adb pull "ls /storage/self/primary/DCIM" .
+adb pull "ls /storage/self/primary/DCIM" .
+adb pull "/storage/self/primary/DCIM" .
+ls | count
+ls | wc
+wc --help
+adb shell "ls /storage/slef"
+adb shell "ls /storage/self"
+adb shell "ls /storage/self/primary/Documents"
+adb shell "ls /storage/self/primary/Download"
+adb shell "ls /storage/self/primary/Music"
+adb shell "ls /storage/self/primary/Pictures"
+adb shell "/storage/self/primary"
+adb shell "ls /storage/self/primary"
+adb shell "ls /storage/self/primary/Recordings"
+cargo test -- --nocapture
+cargo doc --open
+adb devices
+adb shell "ls /storage"
+adb shell "ls /storage/sdcard0"
+adb push * "ls /storage/sdcard0/DCIM/Camera"
+tldr adb
+adb push Camera "/storage/sdcard0/DCIM"
+du -h Mike
+ls Mike | wc -l
+cd Mike
+cd DCIM
+cd Cam
+cd Camera
+ls | wc -l
+ls | grep "VID" | wc -l
+ls | grep "VID" | wc -lah
+ls -lah | grep "VID" | wc -l
+${ls | grep "VID"}
+ls | grep "VID"
+ls | grep "VID" | df
+ls | grep "VID" | df -h
+du -ch *.mp4 | grep total
+adb push Screenshots "/storage/sdcard0/DCIM"
+adb push ScreenRecorder "/storage/sdcard0/DCIM"
+adb shell "ls /storage/sdcard0/DCIM"
+adb shell "ls /storage/sdcard0/DCIM/Camera"
+adb shell "ls /storage/sdcard0/DCIM/Camera" | wc -l
+rm -rf Mike
+cargo new actix-test
+cd actix-test
+cargo add actix-web
+rustup update
+nmtui
+tnm
+nv .git
+cd resources
+cd rust_module
+cp src/main.rs ../../../runtime
+mv main.rs src
+cat main.rs
+mkdir compiler
+mv compiler.rs compiler
+mv main.rs compiler
+cd compiler
+mv main.rs rust_template.rs
+touch mod.rs
+nv .gitignore
+git commit -m "Sync wasm runtime for rust functions"
+touch tokio-select
+nv tokio-select
+mv Dieta\ \(2\).xlsx Dieta.xlsx
+sudo pacman -Syu --noconfirm && paru -Syu --noconfirm && flatpak update && flatpak upgrade
+sudo pacman -Q | grep gnome
+flatpak search extension
+flatpak install flathub com.mattjakeman.ExtensionManager
+pacman -Si gnome
+sudo pacman -S downgrade
+sudo pacman -Ss downgrade
+paru -Ss downgrade
+paru -S downgrade
+sudo downgrade gnome gnome-shell mutter gdm
+sudo downgrade gnome-shell mutter gdm
+sudo systemctl restart gdm
+tmù
+cd Desktop
+cargo new forcekill
+cargo add wasmtime
+cdnv
+clearv
+rustc --explain E0599
+cp $HOME/Documents/git/tesi/src/limes/limes/resources/rust_module/wrapper-rust . -r
+nv src/main.rs
+cargo build --target wasm32-unknown-unknown --release
+cd w
+cp target/wasm32-unknown-unknown/release/wrapper-rust.wasm ../forcekill
+mv wrapper-rust.wasm module.wasm
+rm -rf wrapper-rust
+cargo new test_loop
+cd test_loop
+cd forcekill
+mv target/wasm32-unknown-unknown/debug/test_loop.wasm ../forcekill
+cargo add async_trait
+rustc --explain E0053
+rustc --explain E0195
+cd test
+cargo add controll_stop_yield
+cargo new controlledstop
+cargo add wasmtime tokio
+export RUST_BACKTRACE=1 cargo run
+set RUST_BACKTRACE=1
+cargo update
+rm -rf target
+cargo build
+rm Cargo.lock
+cargo add async_test2
+cargo new async_test_2
+cd async_test_2
+cargo add wasmtime --features async
+cd controlledstop
+rustc --explain E0593
+cargo add tokio --features full
+cargo run
+cargo add thiserror
+cargo add anyhow
+cp lambda_error.rs lambda_error_new.rs
+cd runtime
+mv lambda_error_new.rs lambda_error.rs
+mv target/wasm32-unknown-unknown/debug/wrapper-rust.wasm .
+cargo new infinite-loop-rust
+cp wrapper-rust/src/main.rs infinite-loop-rust/src
+cat wrapper-rust/Cargo.toml
+cat Cargo.toml
+nv 
+cd wrapper-rust
+cd infinite-loop-rust
+rustup show
+ps aux | grep cargo
+ps aux | grep rustc
+nv Cargo.toml
+cargo build --target wasm32-unknown-unknown\
+
+rustc main.rs
+./main
+rm -rf main
+rustc --target=wasm32-unknown-unknown main.rs
+mv main.wasm ..
+mv main.wasm infinite-loop-rust.wasm
+rustc --explain E0425
+rustc --explain E0597
+rustc --explain E0515
+nv init.lua
+cd plugins/
+nv rustowl.lua
+cd core
+nv keymaps.lua
+nv lua/plugins/misc.lua
+nv lua/core/keymaps.lua
+curl -L "https://github.com/cordx56/rustowl/releases/latest/download/install.sh" | sh
+exi
+sudo pacman -Ss code
+paru -S visual-studio-code-bin
+code .
+rustc --explain E0308
+cargo check
+cd limes
+git add .
+git commit -m "Working Rust Lambda executor"
+sudo pacman -Syu && paru -Syu && flatpak update && flatpak upgrade
+sm
+java jobs
+jobs
+ps aux | grep java
+ss
+flatpak update
+rm Rust\ Playground
+rm Rust\ Playground.html
+rm Dieta.xlsx
+..l
+rm -rf Rust\ Playground_files
+sudo pacman -Ss wasm2wat
+sudo pacman -Ss wabt
+sudo pacman -S wabt
+rm out.wat
+cargo build --realease --target wasm32-unknown-unknown\
+
+cargo build  --target wasm32-unknown-unknown --realease\
+
+cargo build  --target wasm32-unknown-unknown --release\
+
+mv target/wasm32-unknown-unknown/release/wrapper-rust.wasm .
+wasm2wat wrapper-rust.wasm -o out.wat
+nv out.wat
+ssh viktor@nazilandia.duckdns.org -p 50022
+ssh viktor@81.56.155.81 -p 50022
+ping 81.56.155.81
+unzip Forever_Stranded_server_pack.zip
+mkdir forever_stranded
+mv mods forever_stranded
+mv scripts forever_stranded
+mv config forever_stranded
+mv server-icon.png forever_stranded
+mv start.ps1 forever_stranded
+mv start.sh forever_stranded
+mv variables.txt forever_stranded
+mv world forever_stranded
+cd forever_stranded
+nv variables.txt
+nv
+chmod u+x start.sh
+java --version
+cat variables.txt
+sudo pacman -Ss openjdk
+sudo pacman -S jre8-openjdk-headless
+ls /bin | grep java
+archlinux-java --help
+archlinux-java set java-8-openjdk/jre
+sudo archlinux-java set java-8-openjdk/jre
+archlinux-java status
+l
+ll
+cp OreExcavation-1.2.135.jar $HOME/Downloads/forever_stranded/mods
+nv oreexcavation.cfg
+file server-icon.png
+zt black_imresizer.png
+feh black_imresizer.png
+cp $HOME/Downloads/black_imresizer.png .
+mv black_imresizer.png server-icon.pgn
+mv server-icon.pgn server-icon.png
+feh server-icon.png
+clea
+nv server.properties
+./start.sh
+nv options.txt
+nv ops.json
+cd config
+rm *.{png/jpg}
+rm *.(png|jpg)
+rm Forever_Stranded_server_pack.zip
+tar cv foreverstranded.tar.xz forever_stranded
+tar cf foreverstranded.tar.xz forever_stranded
+rm -r forever_stranded
+scp -P 50022 foreverstranded.tar.xz viktor@192.168.1.110:/home/viktor/Desktop
+cd Downloads
+tar xf foreverstranded.tar.xz
+cp forever_stranded/mods/OreExcavation-1.2.135.jar .
+rm -rf foreverstranded.tar.xz
+scp -P 50022 OreExcavation-1.2.135.jar viktor@192.168.1.110:/home/viktor/Desktop
+scp -P 50022 Forever_Stranded_server_pack.zip viktor@192.168.1.110:/home/viktor/Desktop
+sudo pacman -Ss zerotier-one
+sudo pacman -S zerotier-one
+sudo systemctl status zerotier-one
+zerotier-cli
+sudo zerotier-cli join 41d49af6c2222d2e
+ip addr 
+sudo systemctl enable zerotier-one
+reboot
+ip addr
+ssh viktor@192.168.1.110 -p 50022
+sudo systemctl start zerotier-one
+sudo zerotier-cli help
+sudo zerotier-cli info
+sudo zerotier-cli dump
+ip addr | grep inet
+cd .var
+mv $HOME/Downloads/OptiFine_1.10.2_HD_U_I5.jar .
+cargo test
+y
+sn
+tm
+sudo pacman -Ss t
+sudo pacman -Ss t | grep python
+sudo pacman -Ss t | grep todo
+paru -Ss todo
+paru -Ss todotxt
+paru -S todotxt
+todo.sh
+todo.sh -h
+tldr todo.sh
+todo.sh add 'gang +project @context'
+todo.sh ls
+todo.sh rm 1
+nv .zshrc
+source .zshrc
+t
+t add "Add axum interface for register, unregister, start and stop +limes"
+t add "Add a logger to the project +limes"
+t add "Create a local DB for the modules +limes"
+t lsprj
+t ls "limnes"
+t ls "limes"
+t ls limes
+t add "Add tap on wasi support +limes"
+t add "add Wasi support +limes"
+t -h
+t add "Add documentation +limes"
+t ls
+flatpak update && flatpak upgrade
+cd .config/nvim
+cd lua
+cd
+ls -lah
+cat todo.txt
+agent
+cd .todo
+git init
+git add é
+git add *ù
+git add --all
+git commit -m "todo files"
+git branch -M main
+git remote add origin git@github.com:ViktorShell/TodoConf.git
+git push -u origin main
+clear
+..
+cd Documents
+cd git
+cd dot
+cd src
+cd .config
+pwd
+pwd | clipboard
+pwd | clip
+set SRC /home/viktor/Documents/git/dot/src\
+
+env | grep SRC
+env | grep $SRC
+set SRC=/home/viktor/Documents/git/dot/src\
+
+echo $SRC
+cd .config/zsh
+ls
+nv zsh
+nv zshrc
+exit
+: 1743427072:0;export SRC=/home/viktor/Documents/git/dot/src\
+
+: 1743427075:0;echo $SRC
+: 1743427076:0;clear
+: 1743427077:0;ls
+: 1743427084:0;clear
+: 1743427085:0;ls
+: 1743427088:0;cp nvim $SRC
+: 1743427089:0;cp nvim $SRC -r
+: 1743427094:0;ls
+: 1743427098:0;mv nvim config
+: 1743427104:0;rm -rf config/nvim
+: 1743427108:0;mv nvim config
+: 1743427108:0;ls
+: 1743427110:0;cd config
+: 1743427110:0;ls
+: 1743427111:0;clear
+: 1743427111:0;ls
+: 1743427116:0;rm -rf picom
+: 1743427120:0;rm -rf sxhkd
+: 1743427124:0;rm -rf bspwm
+: 1743427127:0;rm -rf lemonbar
+: 1743427128:0;ls
+: 1743427128:0;clear
+: 1743427129:0;ls
+: 1743427130:0;rm -rf rofi
+: 1743427131:0;ls
+: 1743427133:0;clear
+: 1743427134:0;ls
+: 1743427144:0;cp kitty $SRC/config -r
+: 1743427151:0;cp tmux $SRC/config -r
+: 1743427156:0;cp zathura $SRC/config -r
+: 1743427159:0;cp zsh $SRC/config -r

@@ -1,3 +1,0 @@
-xrdb -merge .Xresources
-setxkbmap it
-exec bspwm
